@@ -28,6 +28,8 @@ export default createStore<State>({
       commit('Delete_Data', data);
     }
   },
+
+  
   modules: {
   }
 })

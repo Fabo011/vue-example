@@ -18,6 +18,7 @@ import TheDataList from '../components/TheDataList.vue';
     TheDataList,
   },
 })
+
 export default class TheAbout extends Vue {
   msg!: string
 }

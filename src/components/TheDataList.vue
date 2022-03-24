@@ -27,6 +27,8 @@ import TheData from '../components/TheData.vue';
 export default class TheDataList extends Vue {
   msg!: string
 }
+
+
 </script>
 
 
