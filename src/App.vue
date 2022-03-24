@@ -1,12 +1,14 @@
 <template>
 <article>
-<TheHeader msg="Welcome to hokify-App"/>
+<TheHeader msg="Welcome to hokify-App" />
 
 </article>
-  <!--<nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>-->
+  <nav class="mb-2 sm:mb-0">
+    <router-link to="/" 
+    class="text-black font-sans font-bold text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Home</router-link> |
+    <router-link to="/about" 
+    class="text-black font-sans text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Dein Vorname</router-link>
+  </nav>
   <router-view/>
 </template>
 

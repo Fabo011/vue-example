@@ -37,19 +37,21 @@
      <!--Color-Changer Button-->
      <TheColorChanger />
      <!------------------------->
-     
+    
+    
   </form>
 </section> 
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import store from '../store';
 import TheColorChanger from '../components/TheColorChanger.vue';
 import '../css/index.css';
 
 @Options({
   props: {
-    msg: String
+    msg: String,
   },
    components: {
     TheColorChanger,
@@ -83,6 +85,7 @@ export default class TheForm extends Vue {
   }
 
   public openHoki(): void{
+     store.dispatch('openHoki', this.firstname);
      this.$swal.fire({
             title: `Hi ${this.firstname} &#128571;`,
             html: '<b class="font-bold">Hello at hokify.</b>',
